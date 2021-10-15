@@ -1,0 +1,129 @@
+body {
+  font-size: larger;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+}
+
+body nav {
+  width: 1250px;
+  margin: auto;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+}
+
+body nav div:nth-child(1) {
+  width: 150px;
+  text-align: center;
+}
+
+body nav div:nth-child(1) img {
+  width: 80px;
+}
+
+body nav div:nth-child(2) {
+  text-align: center;
+  width: 1150px;
+}
+
+body nav div:nth-child(2) > ul {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+body nav div:nth-child(2) > ul > li {
+  padding: 15px 30px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body nav div:nth-child(2) > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+body nav div:nth-child(2) > ul > li > ul {
+  display: none;
+  list-style-type: none;
+}
+
+body nav div:nth-child(2) > ul > li > ul > li {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-color: red;
+  padding: 15px 30px;
+}
+
+body nav div:nth-child(2) > ul > li > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+body nav div:nth-child(2) > ul > li:hover {
+  background-color: #b30000;
+}
+
+body nav div:nth-child(2) > ul > li:hover > a {
+  color: yellow;
+}
+
+body nav div:nth-child(2) > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  margin: 15px -70px;
+}
+
+body nav div:nth-child(2) > ul > li:hover > ul > li:hover {
+  background-color: #b30000;
+}
+
+body nav div:nth-child(2) > ul > li:hover > ul > li:hover > a {
+  color: yellow;
+  border-bottom: 0.1px dotted yellow;
+}
+
+body main section:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1250px;
+  margin: auto;
+  padding: 10px 30px;
+  height: 400px;
+  background-color: white;
+}
+
+body main section:nth-child(1) iframe {
+  -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+          box-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+}
+
+body main section:nth-child(2) {
+  text-align: center;
+  padding: 10px 30px;
+  width: 1250px;
+  margin: auto;
+  height: 40px;
+  background-color: yellow;
+}
+/*# sourceMappingURL=style.css.map */

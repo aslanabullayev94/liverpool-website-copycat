@@ -1,0 +1,96 @@
+
+body {
+    font-size: larger;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    nav {
+        width: 1250px;
+        margin: auto;
+        padding: 10px 30px;
+        display: flex;
+        background-color: red;
+        div:nth-child(1) {
+            width: 150px;
+            text-align: center;
+            img {
+                width: 80px;
+            }
+        }
+        div:nth-child(2) {
+            text-align: center;
+            width: 1150px;
+            >ul {
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                list-style-type: none;
+                >li {
+                    padding: 15px 30px;
+                    >a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    >ul {
+                        display: none;
+                        list-style-type: none;
+                        >li {
+                            transition:all 1s;
+                            background-color: red;
+                            padding: 15px 30px;
+                            >a {
+                                color: white;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    transition:all 1s;
+                    &:hover {
+                        background-color: rgb(179, 0, 0);
+                        >a{
+                            color: yellow;
+                        }
+                        >ul {
+                            display: block;
+                            position: absolute;
+                            margin: 15px -70px;
+                            >li:hover {
+                                background-color: rgb(179, 0, 0);
+                                >a{
+                                    color: yellow;
+                                    border-bottom: 0.1px dotted yellow;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main {
+        section:nth-child(1) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1250px;
+            margin: auto;
+            padding: 10px 30px;
+            height: 400px;
+            background-color: white;
+            iframe {
+                box-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+            }
+        }
+        section:nth-child(2) {
+            text-align: center;
+            padding: 10px 30px;
+            width: 1250px;
+            margin: auto;
+            height: 40px;
+            background-color: yellow;
+        }
+    }
+}
